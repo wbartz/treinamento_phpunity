@@ -8,8 +8,8 @@ class PostTest extends TestCase
   public function test_if_title_can_be_assing()
   {
     $post = new Post();
-    $post->setTitle('The Theory of everithyng');
+    $post->setTitle("The Theory of everithyng");
 
-    $this->assetEquals('The Theory of everithyng', $post->getTitle());
+    $this->assertEquals("The Theory of everithyng", $post->getTitle());
   }
 }
