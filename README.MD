@@ -6,47 +6,25 @@ Dependências
   - php5.6-xml
   - php5.6-mbstring
 - [PHPUnit](https://phpunit.de/)
+  - [Doc](https://phpunit.de/manual/5.7/en/index.html)
 - [Composer](https://getcomposer.org/)
 
-### Instalando o composer
+Seguir os passos descritos no link
+
+### https://github.com/fmalk/codeigniter-phpunit/tree/2.x
+
+Instalando o PHPUnit
 
 ```sh
-$ sudo apt-get install curl
-$ sudo curl -s https://getcomposer.org/installer | php
-$ sudo mv composer.phar /usr/local/bin/composer
+$ wget https://phar.phpunit.de/phpunit-5.7.9.phar
+$ sudo chmod +x phpunit-5.7.9.phar
+$ sudo mv phpunit-5.7.9.phar /usr/local/bin/phpunit
+$ phpunit --version
 ```
 
-Criar o arquivo **composer.json**
-
-```javascript
-{
-  "name": "wbartz/treinamento_phpunity",
-"description": "Treinamento de testes unitários",
-  "type": "project",
-  "require-dev": {
-    "phpunit/phpunit": "^5"
-  },
-  "license": "MIT",
-  "authors": [
-    {
-      "name": "William Bartz",
-      "email": "williamf.brtz@gmail.com"
-    }
-  ],
-  "autoload": {
-    "psr-4": {
-      "wbartz\\acme\\": "src/"
-    }
-  },
-  "scripts": {
-    "test": "vendor/bin/phpunit"
-  },
-  "require": {}
-}
-```
-
-Instalar as dependências com o comando
+Rodando os testes
 
 ```sh
-$ composer install
+$ cd /var/www/treinamento_phpunity
+$ phpunit
 ```
