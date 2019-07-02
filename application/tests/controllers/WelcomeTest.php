@@ -1,6 +1,6 @@
 <?php
 
-class WelcomeControllerTest extends PHPUnit_Framework_TestCase
+class WelcomeTest extends PHPUnit_Framework_TestCase
 {
   private $CI;
 
@@ -9,12 +9,15 @@ class WelcomeControllerTest extends PHPUnit_Framework_TestCase
     $this->CI = &get_instance();
   }
 
-  public function testLoadWelcomeController()
+  public function testLoadController()
   {
     $folder = APPPATH . 'controllers';
 
     $this->assertTrue(class_exists('Welcome'), 'Welcome is loadable');
+
     $this->CI = new Welcome();
     $this->CI->index();
+
+    unlink($folder . 'welcome.php');
   }
 }

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <phpunit bootstrap="application/tests/bootstrap.php">
-    <testsuites>
+	<testsuites>
 		<testsuite name="TestSuite">
 			<directory>application/tests</directory>
 		</testsuite>
