@@ -43,3 +43,5 @@ $ vendor/bin/phpunit tests --coverage-html target --whitelist=tests
 ```
 
 Acessar no link [http://localhost/phpunit-examples/target/](http://localhost/phpunit-examples/target/)
+
+Instalar PHPUnit no [windows](https://alex.blog/2012/08/21/installing-phpunit-on-windows/)?
