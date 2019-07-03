@@ -28,3 +28,18 @@ Rodando os testes
 $ cd /var/www/treinamento_phpunity
 $ phpunit
 ```
+
+Exemplos mais complexos
+
+```sh
+$ sudo apt install php-xdebug
+$ git clone https://github.com/grobmeier/phpunit-examples
+```
+
+Rodar os testes e exportar para o xdebug
+
+```sh
+$ vendor/bin/phpunit tests --coverage-html target --whitelist=tests
+```
+
+Acessar no link [http://localhost/phpunit-examples/target/](http://localhost/phpunit-examples/target/)
